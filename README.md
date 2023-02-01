@@ -1,2 +1,2 @@
 Link to git pages:
-This is my portfolio
+https://linusdagerfallvinna.github.io/my_ux_portfolio/
