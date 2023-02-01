@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="zxx">
+
+<!--Hej-->
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Start</title>
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <span id="1"></span>
+    <!-- Header -->
+    <header>
+        <div id="widescreen_logo">
+            <a href="#1"><img src="images/loggan.png" alt="Linus Vinnå logotyp" /></a>
+            <!--Alt beskriver innehåll som inte är text (1.1.1) -->
+        </div>
+
+        <div id="smallscreen_header"><!--Header för lite skärm-->
+            <div id="smallscreen_logo">
+                <a href="#1"><img src="images/loggan.png" alt="Linus Vinnå logotyp" /></a><!--Logga-->
+            </div>
+            <a id="hamburger_menu_button">&#9776</a><!--Burgermenu-->
+        </div>
+
+
+        <nav>
+            <ul id="largemenu"><!--Meny för stor skärm-->
+                <li><a href="#1" class="active" class="close">HOME</a></li>
+                <!--Visar var i flödet användaren befinner sig.-->
+                <li><a href="#2" class="close">WORK</a></li>
+                <!--Färgskillnader mellan textelementen kompletteras med understrykning (1.4.1)-->
+                <li><a href="#3" class="close">CONTACT</a></li>
+            </ul>
+
+            <ul id="smallmenu"><!--Meny för liten skärm-->
+                <li><a href="#1" class="active2" class="close">HOME</a></li>
+                <!--Visar var i flödet användaren befinner sig.-->
+                <li><a href="#2" class="close">WORK</a></li>
+                <!--Färgskillnader mellan textelementen kompletteras med fetstil (1.4.1)-->
+                <li><a href="#3" class="close">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="row">
+        <div id="side123" class="side">
+          <h1>UX DESIGNER PORTFOLIO</h1>
+          <div id="bottom">
+          <a href="#2" id="view_work_button">VIEW MY WORK</a>
+          </div>
+        </div>
+        <div id="main123" class="main">
+          <img id="header_image" src="images/white_circle.png" alt="Bild på mig" />
+        </div>
+        <div id="bigcontainer">
+
+            <div class="container3">
+                <div id="cloud3"></div>
+            </div>
+
+            <div class="container31">
+                <div id="cloud3"></div>
+            </div>
+
+            <div class="container32">
+                <div id="cloud3"></div>
+            </div>
+
+            <div class="container33">
+                <div id="cloud3"></div>
+            </div>
+
+        </div>
+
+        <div id="bigcontainer2">
+            <div class="container33">
+                <div id="cloud3"></div>
+            </div>
+
+            <div class="container31">
+                <div id="cloud3"></div>
+            </div>
+
+            <div class="container3">
+                <div id="cloud3"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="all_content">
+
+        <div class="horizonalt_image_div4"> <!-- Ikoner för färdigheter  -->
+            <img class="sectionimage3" alt="Ikon för Research." src="images/research.png" />
+            <img class="sectionimage3" alt="Ikon för Requierments." src="images/requirements.png" />
+            <img class="sectionimage3" alt="Ikon för App development." src="images/app.png" />
+            <img class="sectionimage3" alt="Ikon för Webb development." src="images/webb.png" />
+            <img class="sectionimage3" alt="Ikon för Prototyping." src="images/prototyping.png" />
+        </div>
+
+
+        <span id="2"></span>
+
+        <h2 id="widescreen_gallery_title">WORK</h2> <!--Rubrik för sektionen Work-->
+
+        <div id="wideversion_gallery"> <!--Sektionen Work för stor skärm-->
+
+            <div id="side_gallery_nav"> <!--Vänstra menyn för sektionen Work-->
+                <img id="wideversion_gallery_box1" class="wideversion_gallery_image"
+                    alt="Bild i meny över projektet med Chas Academy" src="images/chasacademy.png" onclick=chas(); />
+                <img id="wideversion_gallery_box2" class="wideversion_gallery_image"
+                    alt="Bild i meny över projektet med WJC 2024" src="images/hockey_image.png" onclick=hockey(); />
+                <img id="wideversion_gallery_box3" class="wideversion_gallery_image"
+                    alt="Bild i meny över projektet med Figma" src="images/figma_image.png" onclick=figma(); />
+            </div>
+
+
+            <div id="main_gallery"> <!--Högra delen för sektionen Work-->
+                <img id="wideversion_big_gallery_image" src="images/chasacademy.png" alt="Bild över valt projekt" />
+                <!--Stor bild till höger för valt projekt-->
+                <div id="bottom_main"> <!--Sektion med info om valt projekt för stor skärm-->
+                    <div id="left_main">
+                        <h2 id="gallery_title">Redesign of Chas Academy</h2> <!--Rubrik för valt projekt-->
+                        <a href="caseStudy1.html" id="readmore_btn">READ MORE</a> <!--Läs mer-knapp-->
+                    </div>
+                    <p id="wide_paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor
+                        incididunt ut labore et dolore magna aliqua.<br><br>
+
+                        Ut enim ad minim veniam, quis nostrud exercitation. Duis aute irure dolor in
+                        reprehenderit
+                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="smallversion_gallery">
+
+            <h2 id="smallscreen_gallery_title">Work</h2> <!--Rubrik för sektionen Work för liten skärm-->
+
+            <div id="big_image_section_smallversion">
+                <img id="smallversion_big_gallery_image" alt="Bild över valt projekt" src="images/chasacademy.png" />
+                <!--Bild för valt projet för liten skärm-->
+            </div>
+
+            <div id="middle_section_smallversion"> <!--Meny för liten skärm-->
+                <img id="smallversion_gallery_box1" class="smallversion_gallery_image"
+                    alt="Bild i meny över projektet med Chas Academy" src="images/chasacademy.png" onclick=chas2(); />
+                <img id="smallversion_gallery_box2" class="smallversion_gallery_image"
+                    alt="Bild i meny över projektet med WJC 2024" src="images/hockey_image.png" onclick=hockey2(); />
+                <img id="smallversion_gallery_box3" class="smallversion_gallery_image"
+                    alt="Bild i meny över projektet med Figma" src="images/figma_image.png" onclick=figma2(); />
+            </div>
+
+            <div id="bottom_section_gallery_smallversion"> <!--Sektion med info om valt projekt för liten skärm-->
+                <h2 id="gallery_title_smallversion">Redesign of Chas Academy</h2>
+                <!--Rubrik för valt projekt för liten skärm-->
+                <p id="small_paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor
+                    incididunt ut labore et dolore magna aliqua.<br><br>
+
+                    Ut enim ad minim veniam, quis nostrud exercitation. Duis aute irure dolor in
+                    reprehenderit
+                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                <a href="caseStudy1.html" id="readmore_btn_small">READ MORE</a> <!--Läs mer knapp för liten skärm-->
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="background-wrap">
+
+        <div class="x1">
+            <div class="cloud"></div>
+        </div>
+
+        <div class="x2">
+            <div class="cloud"></div>
+        </div>
+
+        <div id="container2">
+            <div id="cloud2">
+                <div id="rain">
+                    <div class="drop d1"></div>
+                    <div class="drop d2"></div>
+                    <div class="drop d3"></div>
+                    <div class="drop d4"></div>
+                    <div class="drop d5"></div>
+                    <div class="drop d6"></div>
+                    <div class="drop d7"></div>
+                    <div class="drop d8"></div>
+                    <div class="drop d9"></div>
+                    <div class="drop d10"></div>
+                    <div class="drop d11"></div>
+                    <div class="drop d12"></div>
+                    <div class="drop d13"></div>
+                    <div class="drop d14"></div>
+                    <div class="drop d15"></div>
+                </div>
+                <div id="snow">
+                    <div class="snowdrop d1"></div>
+                    <div class="snowdrop d2"></div>
+                    <div class="snowdrop d3"></div>
+                    <div class="snowdrop d4"></div>
+                    <div class="snowdrop d5"></div>
+                    <div class="snowdrop d6"></div>
+                    <div class="snowdrop d7"></div>
+                    <div class="snowdrop d8"></div>
+                    <div class="snowdrop d9"></div>
+                    <div class="snowdrop d10"></div>
+                    <div class="snowdrop d11"></div>
+                    <div class="snowdrop d12"></div>
+                    <div class="snowdrop d13"></div>
+                    <div class="snowdrop d14"></div>
+                    <div class="snowdrop d15"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="sundiv">
+            <span class="sun sunshine"></span>
+            <span class="sun"></span>
+        </div>
+
+
+        <div id="citydiv">
+            <h1 id="city"><!--CURRENT <br> WEATHER--></h1>
+        </div>
+
+
+        <div class="x3">
+            <div class="cloud"></div>
+        </div>
+
+        <div class="x4">
+            <div class="cloud"></div>
+        </div>
+
+        <div class="x5">
+            <div class="cloud"></div>
+        </div>
+    </div>
+
+    <div id="topdiv1234">
+        <!--<p">Hämta dagens väder</p>
+    <button onclick="myFunction()">Klicka på mig</button>-->
+        <form class="change-location">
+            <label for="city">Enter a location for current weather information: </label>
+            <input type="text" name="city" class="form-control p-4">
+        </form>
+    </div>
+
+    <div class="container123">
+
+    </div>
+
+
+    <!-- Footer -->
+    <span id="3"></span>
+    <footer>
+        <div id="footer_row">
+            <div id="footer_left"> <!--Vänstra delen av footern-->
+                <h3>Contact me</h3> <!--Rubrik för footern-->
+                <a href="mailto:linus.dv@gmail.com" id="email_link">linus.dv@gmail.com</a><br><br> <!--Email länk-->
+                <div id="resume">
+                    <a href="CV.doc.pdf" target="_blank"><img id="pdfimage" alt="PDF logga"
+                            src="images/pdf_vector.png" /></a>
+                    <!--PDF ikon-->
+                    <p id="resume_text">
+                        <a href="CV.doc.pdf" target="_blank">Resume-Linus-Dagerfall-Vinnå.pdf</a> <!--Länk till CV-->
+                    </p>
+                </div>
+            </div>
+            <div id="footer_right"> <!--Högra delen av footern-->
+                <a href="https://www.instagram.com/linusdagerfallvinna/?hl=sv" target="_blank"><img
+                        class="social_media_image" alt="Instagram logga" src="images/instagram.png" /></a>
+                <a href="https://www.facebook.com/linus.dagerfallvinna.5/" target="_blank"><img
+                        class="social_media_image" alt="Facebook logga" src="images/facebookimage.png" /></a>
+                <a href="https://github.com/linusdagerfallvinna/" target="_blank"><img class="social_media_image"
+                        alt="Github logga" src="images/githubimage.png" /></a>
+                <a href="https://www.linkedin.com/in/linus-dagerfall-vinn%C3%A5-7449a313b/" target="_blank"><img
+                        class="social_media_image" alt="Linkedin logga" src="images/linkedinimage.png" /></a>
+                <!--Ikon för sociala medier-->
+            </div>
+        </div>
+    </footer>
+    <script src="gallery_script.js"></script>
+    <script src="weather.js"></script>
+    <script src="script2.js"></script>
+</body>
+
+</html>
