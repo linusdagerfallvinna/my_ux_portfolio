@@ -821,6 +821,7 @@ h3 {
     padding-left:12%;
     padding-right:12%;
     padding-bottom: 0%;
+    padding-top: 8%;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -920,7 +921,7 @@ h3 {
 
 .container123 {
     width: 250px;
-    height: 250px;
+    height: 350px;
     margin: 100px auto;
     padding: 15px;
     display: flex;
@@ -928,6 +929,15 @@ h3 {
     justify-content: center;
     z-index: -6;
 }
+
+input[type=text] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
 
 
 .sun {
