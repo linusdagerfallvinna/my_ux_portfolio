@@ -8,7 +8,7 @@ const getWeather = async (id) => {
     const data = await response.json();
 
     
-    return data[0];//console.log(data);
+    return data[0];
 };
 
 const getCity = async (city) => {
@@ -20,12 +20,3 @@ const getCity = async (city) => {
 
     return data [0];
 };
-
-/*getCity('new york').then(data => {
-    return getWeather(data.Key);
-}).then(data => {
-    console.log(data)
-})
-.catch(err => console.log(err));*/
-
-//getWeather("349727")

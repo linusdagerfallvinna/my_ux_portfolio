@@ -33,68 +33,80 @@
         <nav>
             <ul id="largemenu"><!--Meny för stor skärm-->
                 <li><a href="#1" class="active" class="close">HOME</a></li><!--Visar var i flödet användaren befinner sig.-->
-                <li><a href="#2" class="close">WORK</a></li>                <!--Färgskillnader mellan textelementen kompletteras med understrykning (1.4.1)-->
-                <li><a href="#3" class="close">CONTACT</a></li>
+                <li><a href="#2" class="close">SKILLS</a></li> 
+                <li><a href="#3" class="close">WORK</a></li>                <!--Färgskillnader mellan textelementen kompletteras med understrykning (1.4.1)-->
+                <li><a href="#4" class="close">CONTACT</a></li>
             </ul>
 
             <ul id="smallmenu"><!--Meny för liten skärm-->
                 <li><a href="#1" class="active2" class="close">HOME</a></li><!--Visar var i flödet användaren befinner sig.-->
-                <li><a href="#2" class="close">WORK</a></li>                <!--Färgskillnader mellan textelementen kompletteras med fetstil (1.4.1)-->
-                <li><a href="#3" class="close">CONTACT</a></li>
+                <li><a href="#2" class="close">SKILLS</a></li> 
+                <li><a href="#3" class="close">WORK</a></li>                <!--Färgskillnader mellan textelementen kompletteras med fetstil (1.4.1)-->
+                <li><a href="#4" class="close">CONTACT</a></li>
             </ul>
         </nav>
     </header>
 
 
-    <div class="row">
-        <div id="side123" class="side">
+    <div class="banner">
+
+        <div id="first_cloud_div">
+
+            <div class="container32">
+                <div id="big_cloud"></div>
+            </div>
+
+        </div>
+        <div class="banner_left">
           <h1>UX DESIGNER PORTFOLIO</h1>
           <div id="bottom">
           <a href="#2" id="view_work_button">VIEW MY WORK</a>
           </div>
         </div>
-        <div id="main123" class="main">
+        <div class="banner_right">
           <img id="header_image" src="images/white_circle.png" alt="Bild på mig" />
         </div>
-        <div id="bigcontainer">
+
+        <div id="second_cloud_div">
 
             <div class="container3">
-                <div id="cloud3"></div>
+                <div id="small_cloud"></div>
             </div>
 
             <div class="container31">
-                <div id="cloud3"></div>
+                <div id="small_cloud"></div>
             </div>
 
             <div class="container32">
-                <div id="cloud3"></div>
+                <div id="small_cloud"></div>
             </div>
 
             <div class="container33">
-                <div id="cloud3"></div>
+                <div id="small_cloud"></div>
             </div>
 
         </div>
 
-        <div id="bigcontainer2">
+        <div id="third_cloud_div">
             <div class="container33">
-                <div id="cloud3"></div>
+                <div id="small_cloud"></div>
             </div>
 
             <div class="container31">
-                <div id="cloud3"></div>
+                <div id="small_cloud"></div>
             </div>
 
             <div class="container3">
-                <div id="cloud3"></div>
+                <div id="small_cloud"></div>
             </div>
-
         </div>
     </div>
 
     <div id="all_content">
 
-        <div class="horizonalt_image_div4"> <!-- Ikoner för färdigheter  -->
+        <span id="2"></span>
+
+        <div class="horizontal_image_div4"> <!-- Ikoner för färdigheter  -->
             <img class="sectionimage3" alt="Ikon för Research." src="images/research.png" />
             <img class="sectionimage3" alt="Ikon för Requierments." src="images/requirements.png" />
             <img class="sectionimage3" alt="Ikon för App development." src="images/app.png" />
@@ -102,8 +114,16 @@
             <img class="sectionimage3" alt="Ikon för Prototyping." src="images/prototyping.png" />
         </div>
 
+        <div class="horizontal_image_div5"> <!-- Ikoner för färdigheter  -->
+            <img class="sectionimage3" alt="Ikon för Research." src="images/research2.png" />
+            <img class="sectionimage3" alt="Ikon för Requierments." src="images/requirements2.png" />
+            <img class="sectionimage3" alt="Ikon för App development." src="images/app2.png" />
+            <img class="sectionimage3" alt="Ikon för Webb development." src="images/webb2.png" />
+            <img class="sectionimage3" alt="Ikon för Prototyping." src="images/prototyping2.png" />
+        </div>
 
-        <span id="2"></span>
+
+        <span id="3"></span>
 
         <h2 id="widescreen_gallery_title">WORK</h2> <!--Rubrik för sektionen Work-->
 
@@ -173,18 +193,26 @@
     </div>
 
 
+    <div id="change-location-div">
+        <form class="change-location">
+            <label for="city">Enter a location: </label><br><br>
+            <input type="text" name="city" class="form-control p-4" placeholder="Berlin">
+        </form>
+    </div>
+
+    <div class="weather-window ">
     <div id="background-wrap">
 
-        <div class="x1">
-            <div class="cloud"></div>
-        </div>
-
         <div class="x2">
-            <div class="cloud"></div>
+            <div class="horizontal_cloud"></div>
         </div>
 
-        <div id="container2">
-            <div id="cloud2">
+        <div id="weather_data_div">
+            <div id="sundiv">
+                <span class="sun sunshine"></span>
+                <span class="sun"></span>
+            </div>
+            <div id="cloud">
                 <div id="rain">
                     <div class="drop d1"></div>
                     <div class="drop d2"></div>
@@ -220,48 +248,30 @@
                     <div class="snowdrop d15"></div>
                 </div>
             </div>
-        </div>
-
-        <div id="sundiv">
-            <span class="sun sunshine"></span>
-            <span class="sun"></span>
-        </div>
-
-
-        <div id="citydiv">
-            <h1 id="city">CURRENT <br> WEATHER</h1>
+            <div id="citydiv">
+                <h1 id="city">CURRENT <br> WEATHER</h1>
+            </div>
         </div>
 
 
         <div class="x3">
-            <div class="cloud"></div>
+            <div class="horizontal_cloud"></div>
         </div>
 
         <div class="x4">
-            <div class="cloud"></div>
+            <div class="horizontal_cloud"></div>
         </div>
 
         <div class="x5">
-            <div class="cloud"></div>
+            <div class="horizontal_cloud"></div>
         </div>
     </div>
-
-    <div id="topdiv1234">
-        <!--<p">Hämta dagens väder</p>
-    <button onclick="myFunction()">Klicka på mig</button>-->
-        <form class="change-location">
-            <label for="city">Enter a location: </label><br><br>
-            <input type="text" name="city" class="form-control p-4" placeholder="Berlin">
-        </form>
-    </div>
-
-    <div class="container123">
 
     </div>
 
 
     <!-- Footer -->
-    <span id="3"></span>
+    <span id="4"></span>
     <footer>
         <div id="footer_row">
             <div id="footer_left"> <!--Vänstra delen av footern-->
