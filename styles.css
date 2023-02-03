@@ -49,17 +49,17 @@ li a {
 }
 
 li a:hover {
-    border-bottom: 2px solid #3BAD9F;
-    transition: 0, 7s;
+    border-bottom: 3px solid #3BAD9F;
+    transition: transform .7s;
 }
 
-li a.active {
+li a#active {
     color: #3BAD9F;
-    border-bottom: 2px solid #3BAD9F;
+    border-bottom: 3px solid #3BAD9F;
     font-weight: 700;
 }
 
-li a.active2 {
+li a#active2 {
     color: #3BAD9F;
     font-weight: 700;
 }
@@ -111,7 +111,6 @@ li a.active2 {
     width: 120%;
     font-size: 140%;
     text-transform: uppercase;
-    letter-spacing: 14;
     font-family: 'Inter';
     line-height: 120%;
 }
@@ -122,7 +121,6 @@ li a.active2 {
     width: 120%;
     font-size: 200%;
     text-transform: uppercase;
-    letter-spacing: 14;
     font-family: 'Inter';
     line-height: 120%;
 }
@@ -135,7 +133,6 @@ li a.active2 {
     padding-top: 0%;
     padding-bottom: 5%;
     text-transform: uppercase;
-    letter-spacing: 14;
     font-family: 'Inter';
     line-height: 120%;
 }
@@ -148,7 +145,6 @@ li a.active2 {
     padding-top: 0%;
     padding-bottom: 5%;
     text-transform: uppercase;
-    letter-spacing: 14;
     font-family: 'Inter';
     line-height: 120%;
 }
@@ -248,10 +244,6 @@ li a.active2 {
 
 #smallmenu {
     display: none;
-}
-
-#all_content {
-    background-color: #FFFF;
 }
 
 #item1 {
@@ -892,7 +884,7 @@ h3 {
     z-index: -6;
 }
 
-*/ input[type=text] {
+input[type=text] {
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -943,7 +935,7 @@ h3 {
     padding-bottom: 2%;
 }
 
-#all_content {
+#content_below_banner {
     background-color: #FFFF;
 }
 
@@ -986,16 +978,6 @@ h3 {
     100% {
         margin-left: 100%;
     }
-}
-
-.x1 {
-    -webkit-animation: animateCloud 45s linear infinite;
-    -moz-animation: animateCloud 45s linear infinite;
-    animation: animateCloud 45s linear infinite;
-
-    -webkit-transform: scale(0.65);
-    -moz-transform: scale(0.65);
-    transform: scale(0.65);
 }
 
 .x2 {
@@ -1094,8 +1076,8 @@ h3 {
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     border-radius: 50px;
-    padding-left:12%;
-    margin-left:12%;
+    padding-left: 12%;
+    margin-left: 12%;
     display: none;
 }
 
@@ -1305,15 +1287,15 @@ div#cloud:before {
     padding-bottom: 10%;
 }
 
-.container31 {
+.cloud_version2 {
     align-self: flex-end;
 }
 
-.container33 {
+.cloud_version3 {
     align-self: flex-end;
 }
 
-#small_cloud {
+.small_cloud {
     width: 175px;
     height: 60px;
     background: #f2f9fe;
@@ -1328,15 +1310,15 @@ div#cloud:before {
     animation: mover 3.5s infinite alternate;
 }
 
-#small_cloud:after,
-div#small_cloud:before {
+.small_cloud:after,
+div.small_cloud:before {
     content: '';
     position: absolute;
     z-indeX: -1;
     background: #f2f9fe;
 }
 
-#small_cloud:after {
+.small_cloud:after {
     width: 50px;
     height: 50px;
     -webkit-border-radius: 50px;
@@ -1346,7 +1328,7 @@ div#small_cloud:before {
     left: 25px;
 }
 
-#small_cloud:before {
+.small_cloud:before {
     width: 90px;
     height: 90px;
     -webkit-border-radius: 100px;
@@ -1605,6 +1587,7 @@ h1 {
 
     li a:hover {
         color: #2E2E2E;
+        font-weight: bold;
         border-bottom: 0px solid #FFFF;
     }
 
@@ -1842,15 +1825,15 @@ h1 {
 
     #cloud {
         flex-direction: column;
-        margin-left:0%;
+        margin-left: 0%;
     }
-    
+
     #sundiv {
-        display:flex;
+        display: flex;
         justify-content: center;
         align-items: center;
         height: 220px;
-        width:270px;
+        width: 270px;
         padding-left: 0%;
     }
 
@@ -1861,7 +1844,7 @@ h1 {
         width: 100%;
         padding-top: 5%;
     }
-    
+
     #city {
         color: white;
         text-align: center;
@@ -1897,11 +1880,6 @@ h1 {
         max-height: 0;
         font-size: 18px;
         line-height: 15px;
-    }
-
-    li a:hover {
-        color: #2E2E2E;
-        border-bottom: 0px solid #FFFF;
     }
 
     .showing {
@@ -1940,7 +1918,6 @@ h1 {
 
 
 @media screen and (max-width:391px) {
-
     #readmore_btn_small {
         width: 50%;
     }
@@ -1948,7 +1925,6 @@ h1 {
 
 
 @media screen and (max-width:376px) {
-
     #readmore_btn_small {
         width: 45%;
     }

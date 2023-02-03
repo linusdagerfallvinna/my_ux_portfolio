@@ -16,93 +16,97 @@
 
 <body>
     <span id="1"></span>
-    <!-- Header -->
+    <!-- Början av header -->
     <header>
         <div id="widescreen_logo">
-            <a href="#1"><img src="images/loggan.png" alt="Linus Vinnå logotyp" /></a><!--Alt beskriver innehåll som inte är text (1.1.1) -->
+            <a href="#1"><img src="images/loggan.png"
+                    alt="Linus Vinnå logotyp" /></a><!--Alt beskriver innehåll som inte är text (1.1.1) -->
         </div>
 
         <div id="smallscreen_header"><!--Header för lite skärm-->
             <div id="smallscreen_logo">
                 <a href="#1"><img src="images/loggan.png" alt="Linus Vinnå logotyp" /></a><!--Logga-->
             </div>
-            <a id="hamburger_menu_button">&#9776</a><!--Burgermenu-->
+            <a id="hamburger_menu_button">&#9776;</a><!--Burgermenu-->
         </div>
 
 
         <nav>
             <ul id="largemenu"><!--Meny för stor skärm-->
-                <li><a href="#1" class="active" class="close">HOME</a></li><!--Visar var i flödet användaren befinner sig.-->
-                <li><a href="#2" class="close">SKILLS</a></li> 
-                <li><a href="#3" class="close">WORK</a></li>                <!--Färgskillnader mellan textelementen kompletteras med understrykning (1.4.1)-->
+                <li><a href="#1" id="active" class="close">HOME</a></li>
+                <!--Visar var i flödet användaren befinner sig.-->
+                <li><a href="#2" class="close">SKILLS</a></li>
+                <li><a href="#3" class="close">WORK</a></li>
+                <!--Färgskillnader mellan textelementen kompletteras med understrykning (1.4.1)-->
                 <li><a href="#4" class="close">CONTACT</a></li>
             </ul>
 
             <ul id="smallmenu"><!--Meny för liten skärm-->
-                <li><a href="#1" class="active2" class="close">HOME</a></li><!--Visar var i flödet användaren befinner sig.-->
-                <li><a href="#2" class="close">SKILLS</a></li> 
-                <li><a href="#3" class="close">WORK</a></li>                <!--Färgskillnader mellan textelementen kompletteras med fetstil (1.4.1)-->
+                <li><a href="#1" id="active2" class="close">HOME</a></li>
+                <!--Visar var i flödet användaren befinner sig.-->
+                <li><a href="#2" class="close">SKILLS</a></li>
+                <li><a href="#3" class="close">WORK</a></li>
+                <!--Färgskillnader mellan textelementen kompletteras med fetstil (1.4.1)-->
                 <li><a href="#4" class="close">CONTACT</a></li>
             </ul>
         </nav>
-    </header>
+    </header><!-- Slut av header -->
 
+    <div class="banner"> <!-- Början av banner -->
 
-    <div class="banner">
+        <div id="first_cloud_div"> <!--Moln animation-->
 
-        <div id="first_cloud_div">
-
-            <div class="container32">
-                <div id="big_cloud"></div>
+            <div class="cloud_version4">
+                <div id="big_cloud" alt=""></div>
             </div>
 
         </div>
         <div class="banner_left">
-          <h1>UX DESIGNER PORTFOLIO</h1>
-          <div id="bottom">
-          <a href="#2" id="view_work_button">VIEW MY WORK</a>
-          </div>
+            <h1>UX DESIGNER PORTFOLIO</h1> <!--Rubrik-->
+            <div id="bottom">
+                <a href="#2" id="view_work_button">VIEW MY WORK</a> <!--Knapp som vid klick skrollar ned till Work-->
+            </div>
         </div>
         <div class="banner_right">
-          <img id="header_image" src="images/white_circle.png" alt="Bild på mig" />
+            <img id="header_image" src="images/white_circle.png" alt="Bild på mig" /> <!--Profilbild-->
         </div>
 
-        <div id="second_cloud_div">
+        <div id="second_cloud_div"> <!--Moln animationer-->
 
-            <div class="container3">
-                <div id="small_cloud"></div>
+            <div class="cloud_version1">
+                <div class="small_cloud" alt=""></div>
             </div>
 
-            <div class="container31">
-                <div id="small_cloud"></div>
+            <div class="cloud_version2">
+                <div class="small_cloud" alt=""></div>
             </div>
 
-            <div class="container32">
-                <div id="small_cloud"></div>
+            <div class="cloud_version4">
+                <div class="small_cloud" alt=""></div>
             </div>
 
-            <div class="container33">
-                <div id="small_cloud"></div>
+            <div class="cloud_version3">
+                <div class="small_cloud" alt=""></div>
             </div>
 
         </div>
 
-        <div id="third_cloud_div">
-            <div class="container33">
-                <div id="small_cloud"></div>
+        <div id="third_cloud_div"> <!--Moln animationer-->
+            <div class="cloud_version3">
+                <div class="small_cloud" alt=""></div>
             </div>
 
-            <div class="container31">
-                <div id="small_cloud"></div>
+            <div class="cloud_version2">
+                <div class="small_cloud" alt=""></div>
             </div>
 
-            <div class="container3">
-                <div id="small_cloud"></div>
+            <div class="cloud_version1">
+                <div class="small_cloud" alt=""></div>
             </div>
         </div>
-    </div>
+    </div> <!-- Slutet av banner -->
 
-    <div id="all_content">
+    <div id="content_below_banner">
 
         <span id="2"></span>
 
@@ -194,83 +198,83 @@
 
 
     <div id="change-location-div">
-        <form class="change-location">
-            <label for="city">Enter a location: </label><br><br>
+        <form class="change-location"><!--Inmatningsfält för väder-sektion.-->
+            <label>Enter a location: </label><br><br>
             <input type="text" name="city" class="form-control p-4" placeholder="Berlin">
         </form>
     </div>
 
-    <div class="weather-window ">
-    <div id="background-wrap">
+    <div class="weather-window "><!-- Början av fönster med animation för dagens väder-->
+        <div id="background-wrap">
 
-        <div class="x2">
-            <div class="horizontal_cloud"></div>
-        </div>
-
-        <div id="weather_data_div">
-            <div id="sundiv">
-                <span class="sun sunshine"></span>
-                <span class="sun"></span>
+            <div class="x2" alt=""> <!--Moln-->
+                <div class="horizontal_cloud"></div>
             </div>
-            <div id="cloud">
-                <div id="rain">
-                    <div class="drop d1"></div>
-                    <div class="drop d2"></div>
-                    <div class="drop d3"></div>
-                    <div class="drop d4"></div>
-                    <div class="drop d5"></div>
-                    <div class="drop d6"></div>
-                    <div class="drop d7"></div>
-                    <div class="drop d8"></div>
-                    <div class="drop d9"></div>
-                    <div class="drop d10"></div>
-                    <div class="drop d11"></div>
-                    <div class="drop d12"></div>
-                    <div class="drop d13"></div>
-                    <div class="drop d14"></div>
-                    <div class="drop d15"></div>
+
+            <div id="weather_data_div"> <!--Sol/Moln och väderdata-->
+                <div id="sundiv"> <!--Sol animation-->
+                    <span class="sun sunshine" alt="Solsken animation"></span>
+                    <span class="sun" alt="Sol"></span>
                 </div>
-                <div id="snow">
-                    <div class="snowdrop d1"></div>
-                    <div class="snowdrop d2"></div>
-                    <div class="snowdrop d3"></div>
-                    <div class="snowdrop d4"></div>
-                    <div class="snowdrop d5"></div>
-                    <div class="snowdrop d6"></div>
-                    <div class="snowdrop d7"></div>
-                    <div class="snowdrop d8"></div>
-                    <div class="snowdrop d9"></div>
-                    <div class="snowdrop d10"></div>
-                    <div class="snowdrop d11"></div>
-                    <div class="snowdrop d12"></div>
-                    <div class="snowdrop d13"></div>
-                    <div class="snowdrop d14"></div>
-                    <div class="snowdrop d15"></div>
+                <div id="cloud" alt="Moln"> <!--Moln animation-->
+                    <div id="rain" alt="Regn animation"> <!--Regn-->
+                        <div class="drop d1"></div>
+                        <div class="drop d2"></div>
+                        <div class="drop d3"></div>
+                        <div class="drop d4"></div>
+                        <div class="drop d5"></div>
+                        <div class="drop d6"></div>
+                        <div class="drop d7"></div>
+                        <div class="drop d8"></div>
+                        <div class="drop d9"></div>
+                        <div class="drop d10"></div>
+                        <div class="drop d11"></div>
+                        <div class="drop d12"></div>
+                        <div class="drop d13"></div>
+                        <div class="drop d14"></div>
+                        <div class="drop d15"></div>
+                    </div>
+                    <div id="snow" alt="Snö animation"> <!--Snö-->
+                        <div class="snowdrop d1"></div>
+                        <div class="snowdrop d2"></div>
+                        <div class="snowdrop d3"></div>
+                        <div class="snowdrop d4"></div>
+                        <div class="snowdrop d5"></div>
+                        <div class="snowdrop d6"></div>
+                        <div class="snowdrop d7"></div>
+                        <div class="snowdrop d8"></div>
+                        <div class="snowdrop d9"></div>
+                        <div class="snowdrop d10"></div>
+                        <div class="snowdrop d11"></div>
+                        <div class="snowdrop d12"></div>
+                        <div class="snowdrop d13"></div>
+                        <div class="snowdrop d14"></div>
+                        <div class="snowdrop d15"></div>
+                    </div>
+                </div>
+                <div id="citydiv"> <!--Stad, Väder, Temp-->
+                    <h1 id="city">CURRENT <br> WEATHER</h1>
                 </div>
             </div>
-            <div id="citydiv">
-                <h1 id="city">CURRENT <br> WEATHER</h1>
+
+
+            <div class="x3" alt=""> <!--Moln-->
+                <div class="horizontal_cloud"></div>
+            </div>
+
+            <div class="x4" alt=""> <!--Moln-->
+                <div class="horizontal_cloud"></div>
+            </div>
+
+            <div class="x5" alt=""> <!--Moln-->
+                <div class="horizontal_cloud"></div>
             </div>
         </div>
 
-
-        <div class="x3">
-            <div class="horizontal_cloud"></div>
-        </div>
-
-        <div class="x4">
-            <div class="horizontal_cloud"></div>
-        </div>
-
-        <div class="x5">
-            <div class="horizontal_cloud"></div>
-        </div>
-    </div>
-
-    </div>
+    </div>  <!-- Slutet av fönster med animation för dagens väder-->
 
 
-    <!-- Footer -->
+    <!-- Början av footer -->
     <span id="4"></span>
     <footer>
         <div id="footer_row">
@@ -299,6 +303,7 @@
             </div>
         </div>
     </footer>
+    <!-- Slutet av footer -->
     <script src="gallery_script.js"></script>
     <script src="weather.js"></script>
     <script src="script2.js"></script>
