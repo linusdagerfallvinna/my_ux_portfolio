@@ -597,7 +597,7 @@ h3 {
 
 .right_content_div {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
     flex: 50%;
     line-height: 150%;
@@ -606,7 +606,8 @@ h3 {
 
 .left_content_div {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    justify-content: flex-start;
     flex: 50%;
 }
 
@@ -658,6 +659,12 @@ h3 {
     justify-content: flex-start;
     flex: 60%;
     padding-top: 3%;
+    font-weight: bold;
+    line-height: 150%;
+    font-size: medium;
+}
+
+.ingress2 {
     font-weight: bold;
     line-height: 150%;
     font-size: medium;
