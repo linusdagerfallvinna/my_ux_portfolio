@@ -1,0 +1,636 @@
+<!doctype html>
+<html lang="zxx">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Start</title>
+    <link rel="icon" href="images/test12345.svg">
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta charset="utf-8">
+
+    <style>
+        .sticky {
+            position: fixed;
+            top: 0;
+            margin-top: 60px;
+            width: 100%;
+        }
+
+        .sticky+.content {
+            padding-top: 60px;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbt {
+            font-size: large;
+            border: none;
+            outline: none;
+            color: #2E2E2E;
+            padding: 20px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #ffffff;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: #2E2E2E;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <span id="1"></span>
+    <!-- Början av header -->
+    <header>
+        <div id="widescreen_logo">
+            <a href="#1"><img src="images/loggan2.svg"
+                    alt="Linus Vinnå logotyp" /></a><!--Alt beskriver innehåll som inte är text (1.1.1) -->
+        </div>
+
+        <div id="smallscreen_header"><!--Header för lite skärm-->
+            <div id="smallscreen_logo">
+                <a href="#1"><img src="images/loggan.png" alt="Linus Vinnå logotyp" /></a><!--Logga-->
+            </div>
+            <a id="hamburger_menu_button">&#9776;</a><!--Burgermenu-->
+        </div>
+
+
+        <nav>
+            <ul id="largemenu"><!--Meny för stor skärm-->
+                <li><a href="index.html" class="close">Home</a></li>
+                <!--Visar var i flödet användaren befinner sig.-->
+                <li><a href="aboutMe.html" class="close">About me</a></li>
+                <div class="dropdown">
+                    <li><a href="work.html" id="active" class="close">Work <i class="fa fa-caret-down"></i></a></li>
+                    <div class="dropdown-content">
+                        <a href="#2">Chas Academy</a>
+                        <a href="#8">Sjöstaden Skybar</a>
+                        <a href="#9">WJC 2024</a>
+                    </div>
+                </div>
+                <!--Färgskillnader mellan textelementen kompletteras med understrykning (1.4.1)-->
+            </ul>
+
+            <ul id="smallmenu"><!--Meny för liten skärm-->
+                <li><a href="index.html" class="close">Home</a></li>
+                <!--Visar var i flödet användaren befinner sig.-->
+                <li><a href="aboutMe.html" class="close">About me</a></li>
+                <li><a href="work.html" id="active2" class="close">Work</a></li>
+                <!--Färgskillnader mellan textelementen kompletteras med fetstil (1.4.1)-->
+            </ul>
+        </nav>
+    </header><!-- Slut av header -->
+    <div class="banner2"> <!-- Början av banner -->
+        <h2>WORK</h2> <!--Rubrik-->
+    </div> <!-- Slutet av banner -->
+
+    <div id="navbar">
+        <a href="#2">Chas Academy</a>
+        <a href="#8">Sjöstaden Skybar</a>
+        <a href="#9">WJC 2024</a>
+    </div>
+
+
+    <span id="2"></span>
+    <section class="parallax"> <!--parallax div--> <!--Banner-->
+        <div class="parallax-inner-casestudy">
+            <div id="title_grid_container2">
+                <div id="item1">
+                    <div id="top_div">
+                        <h1 class="title">Redesign of Chas Academy</h1> <!-- Rubrik -->
+                        <img class="casestudylogo" alt="Chas Academy logga" src="images/chaslogo.png" /> <!-- Logga -->
+                    </div>
+                </div>
+                <div id="item2">
+                    <img class="casestudyheroimage" alt="Bilder över arbetet med Chas Academy"
+                        src="images/chasheroimage.png" /> <!-- Bild -->
+                </div>
+            </div>
+
+
+            <div id="title_section_small_version">
+                <h1 class="title_small">Redesign of Chas Academy</h1> <!-- Rubrik liten skärm -->
+                <img class="casestudyheroimage_small" alt="Bilder över arbetet med Chas Academy"
+                    src="images/heroimage.png" /> <!-- Bild i banner för liten skärm -->
+            </div>
+        </div>
+    </section>
+
+    <div class="content">
+
+        <div class="horizontal_image_div"> <!-- Meny för sidans olika delar -->
+            <a href="#3"><img class="sectionimage" alt="Ikon för delen Empathize." src="images/empathize.png" /></a>
+            <a href="#4"><img class="sectionimage" alt="Ikon för delen Define." src="images/define.png" /></a>
+            <a href="#5"><img class="sectionimage" alt="Ikon för delen Ideate." src="images/ideate.png" /></a>
+            <a href="#6"><img class="sectionimage" alt="Ikon för delen Prototype." src="images/prototype.png" /></a>
+            <a href="#7"><img class="sectionimage" alt="Ikon för delen Testing." src="images/testing.png" /></a>
+        </div>
+
+        <span id="3"></span>
+        <div class="flexbox_div1"> <!-- Rubriker och ingress  -->
+            <div class="case_study_section_title">
+                <h3>EMPATHIZE</h3> <!-- Rubrik för sektionen EMPATHIZE  -->
+            </div>
+            <div class="ingress">
+                <p>Under första terminen på utbildningen fick vi en uppgift att ta fram en prototyp för en webbplats där
+                    vi valde att rekonstruera vår skolas hemsida (Chas Academy AB). Vi valde att fokusera på desktop men
+                    gjorde även 3 detaljerade wireframes för mobil. Syftet med uppgiften var att vi skulle bekanta oss
+                    med alla designprocessens faser där vi fick arbeta från att skapa empati till att testa av våra
+                    prototyper med användartester.</p>
+            </div>
+        </div>
+
+        <div class="flexbox_div2">
+            <div id="left_content_div3"> <!-- Vänstra delen av innehållet för sektionen EMPATHIZE  -->
+                <img class="content_div_image"
+                    alt="Bild över kvinna som tänker på hur hon kan få fler människor att välja Chas Academy framför andra skolor."
+                    src="images/thinking.png" /> <!-- Bild -->
+            </div>
+            <div id="right_content_div3"> <!-- Högra delen av innehållet för sektionen EMPATHIZE  -->
+                <p>Vi började med att formulera en problemställningar för att få en tydligare bild av vilket problem som
+                    ska undersökas och lösas. Då vi ville ta reda på hur man bäst formar en hemsida som lockar till sig
+                    studenter kom fram till problemställningen: “Hur får vi fler människor att välja Chas Academy
+                    framför andra skolor?“.<br><br>
+                    Sedan försökte vi utöka våra kunskaper om området genom att kolla igenom den befintliga Chas Academy
+                    sidan samt andra liknande webbplatser. När vi kände att vi hade bättre koll förberedde vi frågor
+                    till vår UX-research där vi valde att arbeta med djupintervjuer och en enkät. Vi valde denna
+                    kombination
+                    då det skulle ge oss både kvalitativ och kvantitativ data. </p>
+            </div>
+        </div>
+
+        <div class="flexbox_div1">
+
+            <div class="case_study_section_title">
+                <h4 class="case_study_section_h3">USER RESEARCH</h4>
+                <!-- Underrubrik under EMPATHIZE för sektionen USER RESEARCH  -->
+            </div>
+        </div>
+
+        <div class="flexbox_div2">
+            <div class="left_content_div"> <!-- Vänstra delen av innehållet för sektionen USER RESEARCH -->
+                <img class="content_div_image"
+                    alt="Bild över statestik för Kön i undersökningen. 38,1% kvinnor 69,9% män."
+                    src="images/stats.png" /> <!-- Bild -->
+            </div>
+            <div class="right_content_div"> <!-- Högra delen av innehållet för sektionen USER RESEARCH -->
+                <p>När vi var klara med intervjuguiden och hade skrivit klar frågorna för enkäten bjöd vi in bekanta
+                    till en intervju samt skickade ut enkäten på sociala medier så att den fick ligga ute över
+                    helgen.<br><br>
+                    Under tiden som enkäten låg ute var det 21 personer som besvarade den. På grund av den begränsade
+                    tiden i vårt skolprojekt var vi tvungna att nöja oss med dessa svar även om statistiken hade varit
+                    mer trovärdig med fler deltagare.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="flexbox_div3">
+            <div class="left_content_div"> <!-- Vänstra delen av innehållet för sektionen USER RESEARCH -->
+                <p>Vi intervjuade sedan våra deltagare och antecknade samt dokumentera
+                    flitigt ned vad de sa.<br><br>
+
+                    Av den data vi fick in av researchen gick det bland annat att se att personer som
+                    söker skola vill ha en webbplats som ser proffsig ut, har bra sökfunktioner och innehåller
+                    lättillgänglig information samt länkar till skolportalen. Det gick även att se att de allra flesta
+                    skulle kunna tänka sig att söka en IT-utbildning utan tidigare erfarenhet.</p>
+            </div>
+            <div class="right_content_div"> <!-- Högra delen av innehållet för sektionen USER RESEARCH -->
+                <img class="content_div_image"
+                    alt="Bild över statestik för om personer har hört talas om skolan innan. 28,6% ja och 71,4% nej."
+                    src="images/stats2.png" />
+            </div>
+        </div>
+
+        <div class="flexbox_div3">
+            <p>Chas Academys webbplats fick övervägande negativ kritik när vi visade upp den under intervjuerna. Där
+                deltagarna menade att sidan inte nådde upp till en skolhemsida som har en utbildning för UX-design.
+                Men den fick även en del positiva reaktioner. Här nedan visas deltagarnas reaktioner:</p>
+        </div>
+
+        <div class="flexbox_div3">
+            <div class="left_content_div"> <!-- Vänstra delen av innehållet för sektionen USER RESEARCH -->
+                <p class="ingress2"> Painpoints:<br><br>
+                </p>
+                <p>
+                    <li>Förväntade sig mer<br></li>
+                    <li>Representerar inte skolans utbildningar<br></li>
+                    <li>Saknas färg<br></li>
+                    <li>Behövs mer info om utbildningar<br></li>
+                    <li>För mycket whitespace vid loggan<br></li>
+                    <li>Behövs fler bilder<br></li>
+                    <li>För mycket text <br></li>
+                    <li>Behövs mer info om skolan på hem<br></li>
+                    <li>Huvudmeny är för stor<br></li>
+                    <li>Onödiga pilar på bildspelet<br></li>
+                    <li>Behövs fler referenser<br></li>
+                    <li>Svårt att hitta kontaktinfo<br></li>
+
+                </p>
+            </div>
+            <div class="right_content_div"> <!-- Högra delen av innehållet för sektionen USER RESEARCH -->
+                <p class="ingress2"> Positiv feedback:<br><br>
+                <p>
+                    <li>Lätt att navigera<br></li>
+                    <li>Lätt att ta sig till "Så ansöker du"<br></li>
+                    <li>Elegant hemsida<br></li>
+                    <li>Hemsidan är strukturerad<br></li>
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="content">
+        <span id="4"></span>
+
+        <div class="flexbox_div1">
+
+            <div class="case_study_section_title">
+                <h3>DEFINE</h3> <!-- Rubrik för sektionen DEFINE  -->
+            </div>
+            <!--<div class="ingress">
+                <p>Efter vår research sammanställde vi först våra anteckningar i dokument och skrev sedan ned relevanta
+                    fynd på post-it lappar. Vi satte sedan upp dom på en whiteboardtavla en efter en och grupperade ihop
+                    de som vi tyckte passade ihop. Vi fick fram 6 stycken olika grupperingar: Val av skola, personlig
+                    info om användaren, skolgång på yrkeshögskola, studiesätt, vidareutbildning och positiv/negativ
+                    feedback på dagens hemsida. </p>
+            </div>-->
+        </div>
+
+        <div class="flexbox_div2">
+            <div class="left_content_div"> <!-- Vänstra delen av innehållet för sektionen DEFINE -->
+                <img class="content_div_image" alt="Bild på arbetet med affinity diagram" src="images/affinity1.jpg" />
+                <!-- Bild -->
+            </div>
+            <div class="right_content_div"> <!-- Högra delen av innehållet för sektionen DEFINE -->
+                <p>Efter vår research sammanställde vi först våra anteckningar i dokument och skrev sedan ned
+                    relevanta
+                    fynd på post-it lappar.<br><br>
+                    Vi satte sedan upp dom på en whiteboardtavla en efter en och grupperade ihop
+                    de som vi tyckte passade ihop. Vi fick fram 6 stycken olika grupperingar: Val av skola,
+                    personlig
+                    info om användaren, skolgång på yrkeshögskola, studiesätt, vidareutbildning och positiv/negativ
+                    feedback på dagens hemsida.<br><br>
+
+                    Sedan valde vi att prioritera de 3 viktigaste grupperingarna. Vi valde att prioritera:
+                    Positiv/negativ feedback på dagens hemsida, val av skola och studiesätt.
+            </div>
+        </div>
+
+        <div class="fullscreen_image_div">
+            <p class="fullscreen_image_description">The final affinity diagram:<br><br></p>
+            <img class="fullscreen_image" alt="Bild på affinity diagram" src="images/affinity12.jpg" />
+            <!-- Bild -->
+            <p class="fullscreen_image_text"> Här är resultatet av vårt affinity diagram. Med hjälp av denna metod
+                blev det mycket tydligare vad som behöver göras för att skapa en hemsida som möter användarnas
+                behov.
+            </p>
+        </div>
+
+        <h4 class="case_study_section_h3">CREATE PERSONAS</h4>
+        <!-- Underrubrik under DEFINE för sektionen CREATE PERSONAS-->
+        <div class="flexbox_div2">
+            <div class="left_content_div"> <!-- Vänstra delen av innehållet för sektionen CREATE PERSONAS -->
+                <p>Baserat på grupperingen "personlig info" i vårt affinity diagram kunde vi urskilja mönster och
+                    gemensamma faktorer hos användarna. Med hjälp av detta skapade vi två personas. Patrick den
+                    ambitiöse och aktiva 39-åringen som jobbar inom IT och den 25-årige studenten Liam som är omtänksam
+                    och envis.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="flexbox_div3">
+            <div class="left_content_div123"> <!-- Vänstra delen av innehållet för sektionen CREATE PERSONAS -->
+                <img class="content_div_image" alt="Bild på Persona" src="images/persona1.png" /> <!-- Bild-->
+            </div>
+            <div class="right_content_div123"> <!-- Högra delen av innehållet för sektionen CREATE PERSONAS -->
+                <img class="content_div_image" alt="Bild på Persona" src="images/persona2.png" />
+            </div>
+        </div>
+
+    </div>
+
+
+    <section class="parallax3"></section> <!-- Parallax div -->
+
+    <div class="content">
+        <span id="5"></span>
+        <div class="flexbox_div1">
+
+            <div class="case_study_section_title">
+                <h3>IDEATE</h3> <!-- Rubrik för sektionen IDEATE  -->
+            </div>
+            <div class="ingress">
+                <p>I den tredje fasen släpper vi loss kreativiteten och jobba tillsammans för att få olika perspektiv
+                    och förslag på lösningar. Denna fas kallas för Idégenerering. Här är det viktigt att aldrig avfärda
+                    en idé. Även en idé som verkar dålig kan leda till en ny infallsvinkel.</p>
+            </div>
+        </div>
+
+        <div class="flexbox_div2">
+            <div class="left_content_div"> <!-- Vänstra delen av innehållet för sektionen IDEATE -->
+                <img class="content_div_image" alt="Bild på konceptskisser" src="images/sketch1.png" />
+            </div>
+            <div class="right_content_div"> <!-- Högra delen av innehållet för sektionen CREATE PERSONAS -->
+                <p>Efter att vi definierat målgruppen och utmaningen blev det dags att börja idégenerera fram en
+                    lösning.
+                    <br><br>
+                    Vi arrangerade en workshop där alla i gruppen fick skissa fram förslag som kan lösa utmaningarna med
+                    dagens hemsida. Efter workshopen samlade vi in alla skisser och jämförde de med varandra.
+                    Vi försökte sedan enas om vad vi ville gå vidare med.
+                    <br><br>
+                    Här ser ni ett exempel på hur de första skisserna såg ut. I det här stadiet kom vi fram med idén att
+                    visa upp alla utbildnignar på HEM. Vi försökte även besvara användarnas behov av mer rörligt
+                    material på hemsidan genom att ha videos om skolan.
+                </p>
+            </div>
+        </div>
+
+        <div class="flexbox_div3">
+            <div id="left_content_div2"> <!-- Vänstra delen av innehållet för sektionen CREATE PERSONAS -->
+                <p>När vi idégenererade tänkte vi mobile first då det blir allt vanligare att surfa via mobilen
+                    nuförtiden. Därför skissade vi fram lösningar för både mobil och desktop.
+                    <br><br>För att bemöta användarnas behov gjorde vi om hur man tar sig till de olika sidorna på
+                    webbplatsen.<br>
+                    Här visas en sitemap som representerar hierarkin på den nya webbplatsen, vad det finns för sektioner
+                    på varje sida och hur man kan ta sig från en sida till en annan. Vi har lagt sidan Inför studier som
+                    inte fanns innan.
+                </p>
+            </div>
+            <div id="right_content_div2"> <!-- Högra delen av innehållet för sektionen CREATE PERSONAS -->
+                <img class="content_div_image" alt="Bild på sitemap" src="images/sitemap.jpg" /> <!-- Bild -->
+            </div>
+        </div>
+
+
+        <div class="fullscreen_image_div">
+            <img class="fullscreen_image" alt="Bild på färgtempelet" src="images/colortempelet.png" /> <!-- Bild -->
+        </div>
+
+    </div>
+
+    <div class="content">
+
+        <span id="6"></span>
+        <div class="flexbox_div1">
+
+            <div class="case_study_section_title">
+                <h3>PROTOTYPE</h3> <!-- Rubrik för sektionen PROTOTYPE  -->
+            </div>
+            <div class="ingress">
+                <p>För att gestalta och visualisera våra idéer i fysisk form skapade vi en prototyp för mobil och en för
+                    desktop. Hifi-prototypen för desktop går att se
+                    genom att klicka på bilden här nedan.</p>
+            </div>
+        </div>
+
+        <div class="fullscreen_image_div2">
+            <a href="https://www.figma.com/proto/4YwJxfoYfx3LOhuhqx2fgX/F%C3%B6rb%C3%A4ttra-CHAS?page-id=0%3A1&node-id=125-4264&viewport=600%2C649%2C0.12&scaling=scale-down-width&starting-point-node-id=125%3A4264"
+                target="_blank">
+                <div class="container">
+                    <img src="images/desktop1.png" alt="Bild på olika vyer av arbetet" class="other_work_image">
+                    <!-- Bild -->
+                    <div class="middle">
+                        <div class="other_work_btn_text">View prototype</div>
+                    </div>
+                </div>
+            </a>
+            <p class="fullscreen_image_text">
+                Vi började först att jobba med wireframes för att visa hur idén hänger ihop
+                och bestäma de olika beståndsdelarnas position. Sedan skapades en mer detaljerad hifi-prototyp som
+                bättre representerar vår vision av skolans nya webbplats. Vi gjorde prototypen klickbar
+                vilket blev användbart när det senare blev dags för användartester.
+            </p>
+        </div>
+
+        <div class="horizontal_image_div2"> <!-- Div med bilder -->
+            <img class="sectionimage2" alt="Bild på lowfi mockup" src="images/lowfi1.png" />
+            <img class="sectionimage2" alt="Bild på lowfi mockup" src="images/lowfi2.png" />
+            <img class="sectionimage2" alt="Bild på lowfi mockup" src="images/lowfi3.png" />
+        </div>
+
+        <div class="horizontal_image_div2"> <!-- Div med bilder -->
+            <img class="sectionimage2" alt="Bild på prototyp" src="images/prototyp1.png" />
+            <img class="sectionimage2" alt="Bild på prototyp" src="images/prototyp2.png" />
+            <img class="sectionimage2" alt="Bild på prototyp" src="images/prototyp3.png" />
+        </div>
+
+    </div>
+
+    <div class="content">
+
+        <span id="7"></span>
+        <div class="flexbox_div1">
+
+            <div class="case_study_section_title">
+                <h3>TEST</h3><!-- Rubrik för sektionen TEST  -->
+            </div>
+        </div>
+
+        <div class="flexbox_div2">
+            <div class="left_content_div"> <!-- Vänstra delen av innehållet för sektionen TEST -->
+                <img class="content_div_image" alt="Bild på användartest" src="images/usertest.jpg" />
+            </div>
+            <div class="right_content_div"> <!-- Högra delen av innehållet för sektionen TEST -->
+                <p>För att testa våra lösningar bokade vi in användartester med användarna.<br><br>
+
+                    Vi skrev ett genemsamt manus för våra användartest. Med hjälp av manuset planerade vi upp alla
+                    uppgifter som anändaren behövde genomföra under testet för att testa av webbplatsen. Vi utförde 7
+                    stycken scenariobaserade användartester där användaren fick leva sig in i olika scenarion för att
+                    utföra uppgifter.
+                    Vi avslutade med några korta frågor.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="flexbox_div3">
+            <div class="left_content_div"> <!-- Understa delen av innehållet för sektionen TEST -->
+                <p>Efter testet sammanställde vi allas anteckningar och letade efter mönster och gemensamma faktorer. Vi
+                    fick ett mer positivt intryck av vår uppdaterade version. De som var bekanta med hur webbplatsen såg
+                    ut innan tyckte att den nya versionen kändes mer inspirerande. Användarna uppskattade även vår nya
+                    sida Inför studier som sammanställde allt som kan vara bra att tänka på innan skolstart.<br><br>Det fanns även utrymme för förbättring.
+                    Vi såg bland annat att folk ibland störde sig på att det var för mycket text på webbplatsen. Detta
+                    resulterade i för mycket scroll på sidorna. Brödtexten var även för stor på vissa ställen. Genom att observera användarna märkte vi att de letade efter “viktiga datum” på sidan Inför Studier istället för på sidan Så ansöker du där den faktiskt låg. Utöver det som jag nämt fick vi in mycket nyttig information som kan användas för att förbättra prototypen ytterligare.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="content_below_banner">
+        <span id="8"></span>
+        <section class="parallax123"> <!--parallax div--> <!--Banner-->
+            <div class="parallax-inner-casestudy">
+                <div id="title_grid_container2">
+                    <div id="item1">
+                        <h1 class="title123">Redesign of Sjöstaden Skybar</h1> <!-- Rubrik -->
+                    </div>
+                    <div id="item2">
+                        <img class="casestudyheroimage2" alt="Bilder över arbetet med Chas Academy"
+                            src="images/phone.png" /> <!-- Bild -->
+                    </div>
+                </div>
+
+
+                <div id="title_section_small_version">
+                    <h1 class="title_small2">Redesign of Sjöstaden Skybar</h1> <!-- Rubrik liten skärm -->
+                    <img class="casestudyheroimage_small" alt="Bilder över arbetet med Chas Academy"
+                        src="images/heroimage.png" /> <!-- Bild i banner för liten skärm -->
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <div class="boxdiv">
+        <p class="hej12345">Här är min inspelade presentation där jag pitchar mina förbättringsförslag till
+            företaget.<br><br>
+            Öppnas i en ny flik - 10 min lång</p>
+        <div class="fullscreen_image_div123">
+            <a href="https://www.canva.com/design/DAFc_NVgxSI/Gi_EQinnRIznXNzxAK1EPw/view?utm_content=DAFc_NVgxSI&utm_campaign=designshare&utm_medium=link&utm_source=recording_view"
+                target="_blank">
+                <div class="container">
+                    <img src="images/video_thumbnail.png" alt="Bild på olika vyer av arbetet" class="other_work_image">
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div id="content_below_banner">
+        <span id="9"></span>
+        <section class="parallax4"> <!--parallax div-->
+            <div class="parallax-inner-casestudy">
+                <div id="title_grid_container2">
+                    <div id="item1">
+                        <div id="top_div">
+                            <h1 class="title">World Junior Championship 2024</h1> <!-- Rubrik i banner -->
+                            <img class="hockeylogo" alt="WJC 2024 logga" src="images/hockeylogo.png" /> <!-- Logga -->
+                        </div>
+                    </div>
+                    <div id="item2">
+                        <img class="casestudyheroimage" alt="Bild på projektet kring WJC 2024"
+                            src="images/hockey_image.png" /> <!-- Bild -->
+                    </div>
+                </div>
+
+                <div id="title_section_small_version">
+                    <h1 class="title_small">World Junior Championship 2024</h1> <!-- Rubrik liten skärm -->
+                    <img class="casestudyheroimage_small" alt="Bild på projektet kring WJC 2024"
+                        src="images/hockey_image.png" /> <!-- Bild i banner för liten skärm -->
+                </div>
+            </div>
+        </section>
+
+        <div class="boxdiv">
+            <p class="hej12345">In progress. Coming soon!</p>
+        </div>
+
+    </div>
+
+    <div id="content_below_banner">
+
+        <!-- Början av footer -->
+        <footer>
+            <div id="footer_row">
+                <div id="footer_left"> <!--Vänstra delen av footern-->
+                    <h3>Contact me</h3> <!--Rubrik för footern-->
+                    <a href="mailto:linus.dv@gmail.com" id="email_link">linus.dv@gmail.com</a><br><br> <!--Email länk-->
+                    <div id="resume">
+                        <a href="CV.doc.pdf" target="_blank"><img id="pdfimage" alt="PDF logga"
+                                src="images/pdf_vector.png" /></a>
+                        <!--PDF ikon-->
+                        <p id="resume_text">
+                            <a href="CV.doc.pdf" target="_blank">Resume-Linus-Dagerfall-Vinnå.pdf</a>
+                            <!--Länk till CV-->
+                        </p>
+                    </div>
+                </div>
+                <div id="footer_right"> <!--Högra delen av footern-->
+                    <a href="https://www.instagram.com/linusdagerfallvinna/?hl=sv" target="_blank"><img
+                            class="social_media_image" alt="Instagram logga" src="images/instagram.png" /></a>
+                    <a href="https://www.facebook.com/linus.dagerfallvinna.5/" target="_blank"><img
+                            class="social_media_image" alt="Facebook logga" src="images/facebookimage.png" /></a>
+                    <a href="https://github.com/linusdagerfallvinna/" target="_blank"><img class="social_media_image"
+                            alt="Github logga" src="images/githubimage.png" /></a>
+                    <a href="https://www.linkedin.com/in/linus-dagerfall-vinn%C3%A5-7449a313b/" target="_blank"><img
+                            class="social_media_image" alt="Linkedin logga" src="images/linkedinimage.png" /></a>
+                    <!--Ikon för sociala medier-->
+                </div>
+            </div>
+        </footer>
+        <div class="case_study_section_title321">
+            <div id="footer_left"> <!--Vänstra delen av footern-->
+                <div id="resume">
+
+                    <!--PDF ikon-->
+                    <p>© 2023 LINUS DAGERFALL VINNÅ</p>
+                </div>
+            </div>
+            <div id="footer_right"> <!--Högra delen av footern-->
+                <div id="resume">
+                    <a href="#1" target="_blank">TILL TOPPEN</a>
+                    <a href="#1" target="_blank"><img id="arrowimage" alt="PDF logga" src="images/arrow.png" /></a>
+                </div>
+            </div>
+        </div>
+        <!-- Slutet av footer -->
+        <script src="gallery_script.js"></script>
+        <script src="weather.js"></script>
+        <script src="script2.js"></script>
+
+        <!--<script>
+            window.onscroll = function () { myFunction() };
+    
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+    
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                } else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+        </script>-->
+</body>
+
+</html>

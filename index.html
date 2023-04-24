@@ -4,14 +4,141 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Start</title>
+    <link rel="icon" href="images/test12345.svg">
     <link rel="stylesheet" type="text/css" href="reset.css" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <meta charset="utf-8">
+
+    <style>
+        * {
+            box-sizing: border-box
+        }
+
+        .mySlides1,
+        .mySlides2 {
+            display: none
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        /* Slideshow container 123 */
+        .slideshow-container {
+            position: relative;
+            margin: auto;
+        }
+
+        /* Next & previous buttons */
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            margin-right: 12%;
+            color: #353333;
+            font-weight: bold;
+            font-size: 60px;
+            transition: 0.6s ease;
+            user-select: none;
+        }
+
+        .prev {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            margin-left: 12%;
+            color: #353333;
+            font-weight: bold;
+            font-size: 60px;
+            transition: 0.6s ease;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+        }
+
+        /* On hover, add a grey background color */
+        .prev:hover,
+        .next:hover {
+            transform: scale(1.1);
+            transition: transform .2s;
+            color: black;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbt {
+            font-size: large;
+            border: none;
+            outline: none;
+            color: #2E2E2E;
+            padding: 20px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #ffffff;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: #2E2E2E;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover {
+            background-color: #ddd;
+        }
+
+        @media screen and (max-width:768px) {
+
+            .next {
+                margin-right: 5%;
+                font-size: 40px;
+            }
+
+            .prev {
+                margin-left: 5%;
+                font-size: 40px;
+            }
+        }
+    </style>
+
 </head>
 
 <body>
@@ -19,7 +146,7 @@
     <!-- Början av header -->
     <header>
         <div id="widescreen_logo">
-            <a href="#1"><img src="images/loggan.png"
+            <a href="#1"><img src="images/loggan2.svg"
                     alt="Linus Vinnå logotyp" /></a><!--Alt beskriver innehåll som inte är text (1.1.1) -->
         </div>
 
@@ -33,34 +160,32 @@
 
         <nav>
             <ul id="largemenu"><!--Meny för stor skärm-->
-                <li><a href="#1" id="active" class="close">HOME</a></li>
+                <li><a href="index.html" id="active" class="close">Home</a></li>
                 <!--Visar var i flödet användaren befinner sig.-->
-                <li><a href="#2" class="close">SKILLS</a></li>
-                <li><a href="#3" class="close">WORK</a></li>
+                <li><a href="aboutMe.html" class="close">About me</a></li>
+                <div class="dropdown">
+                    <li><a href="work.html" class="close">Work <i class="fa fa-caret-down"></i></a></li>
+                    <div class="dropdown-content">
+                        <a href="work.html#2">Chas Academy</a>
+                        <a href="work.html#8">Sjöstaden Skybar</a>
+                        <a href="work.html#9">WJC 2024</a>
+                    </div>
+                </div>
                 <!--Färgskillnader mellan textelementen kompletteras med understrykning (1.4.1)-->
-                <li><a href="#4" class="close">CONTACT</a></li>
             </ul>
 
             <ul id="smallmenu"><!--Meny för liten skärm-->
-                <li><a href="#1" id="active2" class="close">HOME</a></li>
+                <li><a href="#1" id="active2" class="close">Home</a></li>
                 <!--Visar var i flödet användaren befinner sig.-->
-                <li><a href="#2" class="close">SKILLS</a></li>
-                <li><a href="#3" class="close">WORK</a></li>
+                <li><a href="aboutMe.html" class="close">About me</a></li>
+                <li><a href="work.html" class="close">Work</a></li>
                 <!--Färgskillnader mellan textelementen kompletteras med fetstil (1.4.1)-->
-                <li><a href="#4" class="close">CONTACT</a></li>
             </ul>
         </nav>
     </header><!-- Slut av header -->
 
     <div class="banner"> <!-- Början av banner -->
 
-        <div id="first_cloud_div"> <!--Moln animation-->
-
-            <div class="cloud_version4">
-                <div id="big_cloud" alt=""></div>
-            </div>
-
-        </div>
         <div class="banner_left">
             <h1>UX DESIGNER PORTFOLIO</h1> <!--Rubrik-->
             <div id="bottom">
@@ -68,47 +193,22 @@
             </div>
         </div>
         <div class="banner_right">
-            <img id="header_image" src="images/white_circle.png" alt="Bild på mig" /> <!--Profilbild-->
-        </div>
-
-        <div id="second_cloud_div"> <!--Moln animationer-->
-
-            <div class="cloud_version1">
-                <div class="small_cloud" alt=""></div>
-            </div>
-
-            <div class="cloud_version2">
-                <div class="small_cloud" alt=""></div>
-            </div>
-
-            <div class="cloud_version4">
-                <div class="small_cloud" alt=""></div>
-            </div>
-
-            <div class="cloud_version3">
-                <div class="small_cloud" alt=""></div>
-            </div>
-
-        </div>
-
-        <div id="third_cloud_div"> <!--Moln animationer-->
-            <div class="cloud_version3">
-                <div class="small_cloud" alt=""></div>
-            </div>
-
-            <div class="cloud_version2">
-                <div class="small_cloud" alt=""></div>
-            </div>
-
-            <div class="cloud_version1">
-                <div class="small_cloud" alt=""></div>
-            </div>
+            <img id="header_image" src="images/Component_123.png" alt="Bild på mig" /> <!--Profilbild-->
+            <p id="hej123">I am Linus Dagerfall Vinnå</p>
+            <p id="hej1234">UX designer and Android Developer</p>
         </div>
     </div> <!-- Slutet av banner -->
 
     <div id="content_below_banner">
 
         <span id="2"></span>
+
+        <div class="flexbox_div1">
+
+            <div class="case_study_section_title1234">
+                <h3>SKILLS</h3>
+            </div>
+        </div>
 
         <div class="horizontal_image_div4"> <!-- Ikoner för färdigheter  -->
             <img class="sectionimage3" alt="Ikon för Research." src="images/research.png" />
@@ -119,27 +219,36 @@
         </div>
 
         <div class="horizontal_image_div5"> <!-- Ikoner för färdigheter  -->
-            <img class="sectionimage3" alt="Ikon för Research." src="images/research2.png" />
-            <img class="sectionimage3" alt="Ikon för Requierments." src="images/requirements2.png" />
-            <img class="sectionimage3" alt="Ikon för App development." src="images/app2.png" />
-            <img class="sectionimage3" alt="Ikon för Webb development." src="images/webb2.png" />
-            <img class="sectionimage3" alt="Ikon för Prototyping." src="images/prototyping2.png" />
+            <img class="sectionimage5" alt="Ikon för Research." src="images/research2.png" />
+            <img class="sectionimage5" alt="Ikon för Requierments." src="images/requirements2.png" />
+            <img class="sectionimage5" alt="Ikon för App development." src="images/app2.png" />
+            <img class="sectionimage5" alt="Ikon för Webb development." src="images/webb2.png" />
+            <img class="sectionimage5" alt="Ikon för Prototyping." src="images/prototyping2.png" />
         </div>
 
+    </div>
+
+
+    <div id="content_below_banner">
 
         <span id="3"></span>
 
-        <h2 id="widescreen_gallery_title">WORK</h2> <!--Rubrik för sektionen Work-->
+        <div class="flexbox_div1">
+
+            <div class="case_study_section_title123">
+                <h3>WORK</h3>
+            </div>
+        </div>
 
         <div id="wideversion_gallery"> <!--Sektionen Work för stor skärm-->
 
             <div id="side_gallery_nav"> <!--Vänstra menyn för sektionen Work-->
                 <img id="wideversion_gallery_box1" class="wideversion_gallery_image"
                     alt="Bild i meny över projektet med Chas Academy" src="images/chasacademy.png" onclick=chas(); />
+                <img id="wideversion_gallery_box3" class="wideversion_gallery_image"
+                    alt="Bild i meny över projektet med Figma" src="images/sjostaden_banner2.png" onclick=figma(); />
                 <img id="wideversion_gallery_box2" class="wideversion_gallery_image"
                     alt="Bild i meny över projektet med WJC 2024" src="images/hockey_image.png" onclick=hockey(); />
-                <img id="wideversion_gallery_box3" class="wideversion_gallery_image"
-                    alt="Bild i meny över projektet med Figma" src="images/figma_image.png" onclick=figma(); />
             </div>
 
 
@@ -148,130 +257,97 @@
                 <!--Stor bild till höger för valt projekt-->
                 <div id="bottom_main"> <!--Sektion med info om valt projekt för stor skärm-->
                     <div id="left_main">
-                        <h2 id="gallery_title">Redesign of Chas Academy</h2> <!--Rubrik för valt projekt-->
-                        <a href="caseStudy1.html" id="readmore_btn">READ MORE</a> <!--Läs mer-knapp-->
+                        <h4 id="gallery_title">Redesign of Chas Academy</h4> <!--Rubrik för valt projekt-->
+                        <a href="work.html#2" id="readmore_btn">READ MORE</a> <!--Läs mer-knapp-->
                     </div>
-                    <p id="wide_paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor
-                        incididunt ut labore et dolore magna aliqua.<br><br>
+                    <p id="wide_paragraph">We were given a task to develop a prototype for a website.<br><br>
 
-                        Ut enim ad minim veniam, quis nostrud exercitation. Duis aute irure dolor in
-                        reprehenderit
-                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                        We chose to
+                redesign our school's website (Chas Academy AB). We focused on the desktop version but we also...</p>
                 </div>
             </div>
         </div>
 
-        <div id="smallversion_gallery">
+    </div>
 
-            <h2 id="smallscreen_gallery_title">Work</h2> <!--Rubrik för sektionen Work för liten skärm-->
+    <div id="smallversion_gallery">
 
-            <div id="big_image_section_smallversion">
-                <img id="smallversion_big_gallery_image" alt="Bild över valt projekt" src="images/chasacademy.png" />
-                <!--Bild för valt projet för liten skärm-->
-            </div>
+        <h4 id="smallscreen_gallery_title">Work</h4> <!--Rubrik för sektionen Work för liten skärm-->
 
-            <div id="middle_section_smallversion"> <!--Meny för liten skärm-->
-                <img id="smallversion_gallery_box1" class="smallversion_gallery_image"
-                    alt="Bild i meny över projektet med Chas Academy" src="images/chasacademy.png" onclick=chas2(); />
-                <img id="smallversion_gallery_box2" class="smallversion_gallery_image"
-                    alt="Bild i meny över projektet med WJC 2024" src="images/hockey_image.png" onclick=hockey2(); />
+        <div id="big_image_section_smallversion">
+            <img id="smallversion_big_gallery_image" alt="Bild över valt projekt" src="images/chasacademy.png" />
+            <!--Bild för valt projet för liten skärm-->
+        </div>
+
+        <div id="middle_section_smallversion"> <!--Meny för liten skärm-->
+            <img id="smallversion_gallery_box1" class="smallversion_gallery_image"
+                alt="Bild i meny över projektet med Chas Academy" src="images/chasacademy.png" onclick=chas2(); />
                 <img id="smallversion_gallery_box3" class="smallversion_gallery_image"
-                    alt="Bild i meny över projektet med Figma" src="images/figma_image.png" onclick=figma2(); />
-            </div>
-
-            <div id="bottom_section_gallery_smallversion"> <!--Sektion med info om valt projekt för liten skärm-->
-                <h2 id="gallery_title_smallversion">Redesign of Chas Academy</h2>
-                <!--Rubrik för valt projekt för liten skärm-->
-                <p id="small_paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor
-                    incididunt ut labore et dolore magna aliqua.<br><br>
-
-                    Ut enim ad minim veniam, quis nostrud exercitation. Duis aute irure dolor in
-                    reprehenderit
-                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-                <a href="caseStudy1.html" id="readmore_btn_small">READ MORE</a> <!--Läs mer knapp för liten skärm-->
-            </div>
+                alt="Bild i meny över projektet med Figma" src="images/sjostaden_banner2.png" onclick=figma2(); />
+            <img id="smallversion_gallery_box2" class="smallversion_gallery_image"
+                alt="Bild i meny över projektet med WJC 2024" src="images/hockey_image.png" onclick=hockey2(); />
         </div>
 
+        <div id="bottom_section_gallery_smallversion"> <!--Sektion med info om valt projekt för liten skärm-->
+            <h4 id="gallery_title_smallversion">Redesign of Chas Academy</h4>
+            <!--Rubrik för valt projekt för liten skärm-->
+            <p id="small_paragraph">We were given a task to develop a prototype for a website. We chose to
+                redesign our school's website (Chas Academy AB). We focused on the desktop version but we also
+                made 3 detailed wireframes for mobile.</p>
+            <a href="work.html" id="readmore_btn_small">READ MORE</a> <!--Läs mer knapp för liten skärm-->
+        </div>
     </div>
 
-
-    <div id="change-location-div">
-        <form class="change-location"><!--Inmatningsfält för väder-sektion.-->
-            <label>Enter a location: </label><br><br>
-            <input type="text" name="city" class="form-control p-4" placeholder="Berlin">
-        </form>
-    </div>
-
-    <div class="weather-window "><!-- Början av fönster med animation för dagens väder-->
-        <div id="background-wrap">
-
-            <div class="x2" alt=""> <!--Moln-->
-                <div class="horizontal_cloud"></div>
-            </div>
-
-            <div id="weather_data_div"> <!--Sol/Moln och väderdata-->
-                <div id="sundiv"> <!--Sol animation-->
-                    <span class="sun sunshine" alt="Solsken animation"></span>
-                    <span class="sun" alt="Sol"></span>
-                </div>
-                <div id="cloud" alt="Moln"> <!--Moln animation-->
-                    <div id="rain" alt="Regn animation"> <!--Regn-->
-                        <div class="drop d1"></div>
-                        <div class="drop d2"></div>
-                        <div class="drop d3"></div>
-                        <div class="drop d4"></div>
-                        <div class="drop d5"></div>
-                        <div class="drop d6"></div>
-                        <div class="drop d7"></div>
-                        <div class="drop d8"></div>
-                        <div class="drop d9"></div>
-                        <div class="drop d10"></div>
-                        <div class="drop d11"></div>
-                        <div class="drop d12"></div>
-                        <div class="drop d13"></div>
-                        <div class="drop d14"></div>
-                        <div class="drop d15"></div>
-                    </div>
-                    <div id="snow" alt="Snö animation"> <!--Snö-->
-                        <div class="snowdrop d1"></div>
-                        <div class="snowdrop d2"></div>
-                        <div class="snowdrop d3"></div>
-                        <div class="snowdrop d4"></div>
-                        <div class="snowdrop d5"></div>
-                        <div class="snowdrop d6"></div>
-                        <div class="snowdrop d7"></div>
-                        <div class="snowdrop d8"></div>
-                        <div class="snowdrop d9"></div>
-                        <div class="snowdrop d10"></div>
-                        <div class="snowdrop d11"></div>
-                        <div class="snowdrop d12"></div>
-                        <div class="snowdrop d13"></div>
-                        <div class="snowdrop d14"></div>
-                        <div class="snowdrop d15"></div>
-                    </div>
-                </div>
-                <div id="citydiv"> <!--Stad, Väder, Temp-->
-                    <h1 id="city">CURRENT <br> WEATHER</h1>
-                </div>
-            </div>
-
-
-            <div class="x3" alt=""> <!--Moln-->
-                <div class="horizontal_cloud"></div>
-            </div>
-
-            <div class="x4" alt=""> <!--Moln-->
-                <div class="horizontal_cloud"></div>
-            </div>
-
-            <div class="x5" alt=""> <!--Moln-->
-                <div class="horizontal_cloud"></div>
-            </div>
+    <div class="slideshow-container">
+        <div class="mySlides1">
+            <img src="images/slide_show1.png" style="width:100%">
         </div>
 
-    </div>  <!-- Slutet av fönster med animation för dagens väder-->
+        <div class="mySlides1">
+            <img src="images/slide_show2.png" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+            <img src="images/slide_show3.png" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+            <img src="images/slide_show4.png" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+            <img src="images/slide_show5.png" style="width:100%">
+        </div>
+
+        <div class="mySlides1">
+            <img src="images/slide_show6.png" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+    </div>
+
+    <script>
+        let slideIndex = [1, 1];
+        let slideId = ["mySlides1", "mySlides2"]
+        showSlides(1, 0);
+        showSlides(1, 1);
+
+        function plusSlides(n, no) {
+            showSlides(slideIndex[no] += n, no);
+        }
+
+        function showSlides(n, no) {
+            let i;
+            let x = document.getElementsByClassName(slideId[no]);
+            if (n > x.length) { slideIndex[no] = 1 }
+            if (n < 1) { slideIndex[no] = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex[no] - 1].style.display = "block";
+        }
+    </script>
 
 
     <!-- Början av footer -->
@@ -286,7 +362,7 @@
                             src="images/pdf_vector.png" /></a>
                     <!--PDF ikon-->
                     <p id="resume_text">
-                        <a href="CV.doc.pdf" target="_blank">Resume-Linus-Dagerfall-Vinnå.pdf</a> <!--Länk till CV-->
+                        <a href="Resume.pdf" target="_blank">Resume-Linus-Dagerfall-Vinnå.pdf</a> <!--Länk till CV-->
                     </p>
                 </div>
             </div>
@@ -303,6 +379,21 @@
             </div>
         </div>
     </footer>
+    <div class="case_study_section_title321">
+        <div id="footer_left"> <!--Vänstra delen av footern-->
+            <div id="resume">
+
+                <!--PDF ikon-->
+                <p>© 2023 LINUS DAGERFALL VINNÅ</p>
+            </div>
+        </div>
+        <div id="footer_right"> <!--Högra delen av footern-->
+            <div id="resume">
+                <a href="#1" target="_blank">TILL TOPPEN</a>
+                <a href="#1" target="_blank"><img id="arrowimage" alt="PDF logga" src="images/arrow.png" /></a>
+            </div>
+        </div>
+    </div>
     <!-- Slutet av footer -->
     <script src="gallery_script.js"></script>
     <script src="weather.js"></script>
